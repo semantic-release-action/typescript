@@ -1,3 +1,17 @@
+# [3.1.0-beta.2](https://github.com/semantic-release-action/typescript/compare/v3.1.0-beta.1...v3.1.0-beta.2) (2025-11-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency semantic-release to v25.0.1 ([4e0e32f](https://github.com/semantic-release-action/typescript/commit/4e0e32ff481e7ba6f12811f24d670b323a36767c))
+
+## [3.1.0-beta.1](https://github.com/semantic-release-action/typescript/compare/v3.0.21...v3.1.0-beta.1) (2025-11-03)
+
+
+### Features
+
+* make npm-token workflow input optional ([d3ff040](https://github.com/semantic-release-action/typescript/commit/d3ff040618d1bfdc618bd23ee48daf4863b91683))
+
 ## [3.0.22](https://github.com/semantic-release-action/typescript/compare/v3.0.21...v3.0.22) (2025-11-03)
 
 
