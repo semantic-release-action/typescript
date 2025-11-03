@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/semantic-release-action/typescript/compare/v3.0.22...v3.1.0) (2025-11-03)
+
+
+### Features
+
+* make npm-token workflow input optional ([d3ff040](https://github.com/semantic-release-action/typescript/commit/d3ff040618d1bfdc618bd23ee48daf4863b91683))
+
 # [3.1.0-beta.2](https://github.com/semantic-release-action/typescript/compare/v3.1.0-beta.1...v3.1.0-beta.2) (2025-11-03)
 
 
