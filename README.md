@@ -116,6 +116,7 @@ jobs:
 |     release-node-version     |              `lts/*`              |             Node.js version to use for releasing. [Details](#release-node-version)             |
 |  allow-postinstall-scripts   |              `false`              |     If false, uses `--ignore-scripts` with `npm ci`. [Details](#allow-postinstall-scripts)     |
 | disable-semantic-release-git |              `false`              | Disable [@semantic-release/git] in your release flow. [Details](#disable-semantic-release-git) |
+|         environment          |              `false`              | Required: `false`. Allows repositories to use GitHub Environments for OIDC Trusted Publishing, if provided when calling. [Details](#environment) |
 
 #### release-node-version
 
@@ -128,6 +129,14 @@ Set to `true` to prevent semantic-release from pushing artifacts to your reposit
 This may be required with certain repository settings, for example when requiring signed commits.
 
 [@semantic-release/git]: https://github.com/semantic-release/git
+
+#### environment
+
+Runtime option controlling the use of GitHub [Environments].
+Required is set to `false` in the case that a repository is not using an Environment setup.
+This input will be required inside of repositories that are publishing using OIDC Trusted Publishing.
+
+[Environments]: https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments
 
 ### Secrets
 
