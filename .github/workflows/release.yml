@@ -25,6 +25,10 @@ on:
         description: Disable @semantic-release/git in your release flow. Only takes effect if the action semantic-release config is used.
         type: boolean
         default: false
+      environment:
+        description: The GitHub environment name configured on npmjs.com, if using GitHub environments for deployment protection with trusted publishing.
+        type: string
+        required: false
     secrets:
       npm-token:
         description: API token for writing to your npm registry
@@ -84,6 +88,7 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
 
     needs:
       - test
