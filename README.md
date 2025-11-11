@@ -133,8 +133,11 @@ This may be required with certain repository settings, for example when requirin
 
 |  Secret   | Required | Description                                   |
 | :-------: | :------: | --------------------------------------------- |
-| npm-token |   true   | npm registry API token. [Details](#npm-token) |
+| npm-token |  false   | npm registry API token. [Details](#npm-token) |
 
 #### npm-token
 
 API token with write permission for publishing your package to your target registry.
+Leave unset when using [trusted publishing].
+
+[trusted publishing]: https://docs.npmjs.com/trusted-publishers
