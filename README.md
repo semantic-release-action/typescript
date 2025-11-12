@@ -134,7 +134,7 @@ This may be required with certain repository settings, for example when requirin
 
 Runtime option controlling the use of GitHub [Environments].
 Required is set to `false` in the case that a repository is not using an Environment setup.
-This input will be required inside of repositories that are publishing using OIDC Trusted Publishing.
+This input will be required inside of repositories that are publishing using OIDC Trusted Publishing, as the Trusted Publishing settings on npmjs will only allow releases from the configured environment.
 
 [Environments]: https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments
 
