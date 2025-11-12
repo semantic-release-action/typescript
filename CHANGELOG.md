@@ -5,6 +5,13 @@
 
 * **deps:** update dependency semantic-release to v25.0.2 ([beaa89c](https://github.com/semantic-release-action/typescript/commit/beaa89c05b71013c1df85a3a4d01283c6b517580))
 
+# [3.2.0-beta.1](https://github.com/semantic-release-action/typescript/compare/v3.1.0...v3.2.0-beta.1) (2025-11-12)
+
+
+### Features
+
+* trigger beta release w/ environment input ([0d0155e](https://github.com/semantic-release-action/typescript/commit/0d0155e95b687b2f1942c9cc762210f8f1ba1281))
+
 # [3.1.0](https://github.com/semantic-release-action/typescript/compare/v3.0.22...v3.1.0) (2025-11-03)
 
 
