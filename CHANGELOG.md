@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/semantic-release-action/typescript/compare/v3.1.1...v3.2.0) (2025-11-20)
+
+
+### Features
+
+* trigger beta release w/ environment input ([d20a103](https://github.com/semantic-release-action/typescript/commit/d20a1038bc5d36cff1833adda3936b4bc1ceb346))
+
 ## [3.1.1](https://github.com/semantic-release-action/typescript/compare/v3.1.0...v3.1.1) (2025-11-11)
 
 
