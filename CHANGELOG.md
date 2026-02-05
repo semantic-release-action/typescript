@@ -1,3 +1,10 @@
+## [3.2.3](https://github.com/semantic-release-action/typescript/compare/v3.2.2...v3.2.3) (2026-02-05)
+
+
+### Bug Fixes
+
+* **debug-trusted-publishing:** print npm version ([627dbd0](https://github.com/semantic-release-action/typescript/commit/627dbd05e9a7c83c4e357b6abcc62aa6970f9a88))
+
 ## [3.2.2](https://github.com/semantic-release-action/typescript/compare/v3.2.1...v3.2.2) (2026-02-05)
 
 
