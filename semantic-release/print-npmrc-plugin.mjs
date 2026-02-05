@@ -1,12 +1,13 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { execSync } from "child_process";
 
 /**
  * Custom semantic-release plugin to print the .npmrc file used during publishing.
  * This plugin receives the context from semantic-release and inspects the npm configuration.
  */
 
-async function publish(pluginConfig, context) {
+export async function publish(pluginConfig, context) {
   const { cwd, logger } = context;
 
   logger.log(
@@ -26,7 +27,6 @@ async function publish(pluginConfig, context) {
   }
 
   // Also check what npm config is being used by reading npm's actual config
-  const { execSync } = require("child_process");
   try {
     logger.log("==> npm config userconfig <==");
     const userconfig = execSync("npm config get userconfig", {
@@ -44,5 +44,3 @@ async function publish(pluginConfig, context) {
     logger.error(`Error reading npm config: ${error.message}`);
   }
 }
-
-module.exports = { publish };

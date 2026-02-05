@@ -129,7 +129,7 @@ runs:
         cp "${{ github.action_path }}/package.json" "${{ env.node_workdir }}/package.json"
         cp "${{ github.action_path }}/package-lock.json" "${{ env.node_workdir }}/package-lock.json"
         cp "${{ github.action_path }}/.releaserc.json" ".releaserc.json"
-        cp "${{ github.action_path }}/print-npmrc-plugin.js" "print-npmrc-plugin.js"
+        cp "${{ github.action_path }}/print-npmrc-plugin.mjs" "print-npmrc-plugin.mjs"
       shell: bash
 
     - if: steps.is-semantic-release-configured.outputs.host-configuration == 'false' && inputs.disable-semantic-release-git == 'true'
