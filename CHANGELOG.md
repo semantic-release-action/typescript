@@ -1,3 +1,10 @@
+## [3.2.4](https://github.com/semantic-release-action/typescript/compare/v3.2.3...v3.2.4) (2026-02-05)
+
+
+### Bug Fixes
+
+* add missing shell directive ([4dfa50b](https://github.com/semantic-release-action/typescript/commit/4dfa50bd2ca18607f897cc4d0ba28622967c3502))
+
 ## [3.2.3](https://github.com/semantic-release-action/typescript/compare/v3.2.2...v3.2.3) (2026-02-05)
 
 
