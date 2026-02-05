@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/semantic-release-action/typescript/compare/v3.2.6...v4.0.0) (2026-02-05)
+
+
+* fix!: drop support for publishing to npm using tokens ([71f4d53](https://github.com/semantic-release-action/typescript/commit/71f4d5302430af0fa8180a204fdb4ddff88e6137))
+
+
+### BREAKING CHANGES
+
+* This requires use of [npm trusted publishing via OIDC].
+
+[npm trusted publishing via oidc]: https://docs.npmjs.com/trusted-publishers
+
 ## [3.2.6](https://github.com/semantic-release-action/typescript/compare/v3.2.5...v3.2.6) (2026-02-05)
 
 
