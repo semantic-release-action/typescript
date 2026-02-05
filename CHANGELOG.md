@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/semantic-release-action/typescript/compare/v4.0.0...v4.0.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* specify required permissions ([96e9c22](https://github.com/semantic-release-action/typescript/commit/96e9c228fc90b6750fe5fcf890d6ae75362415ab))
+
 # [4.0.0](https://github.com/semantic-release-action/typescript/compare/v3.2.6...v4.0.0) (2026-02-05)
 
 
