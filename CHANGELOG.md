@@ -1,3 +1,10 @@
+## [3.2.2](https://github.com/semantic-release-action/typescript/compare/v3.2.1...v3.2.2) (2026-02-05)
+
+
+### Bug Fixes
+
+* do not provide empty npm_token string when using trusted publishing ([89d622d](https://github.com/semantic-release-action/typescript/commit/89d622d6622a6a193ddb6f654fbd2e37cdab9eac))
+
 ## [3.2.1](https://github.com/semantic-release-action/typescript/compare/v3.2.0...v3.2.1) (2026-02-05)
 
 
