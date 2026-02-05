@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/semantic-release-action/typescript/compare/v4.0.6...v4.1.0) (2026-02-05)
+
+
+### Features
+
+* print .npmrc during publish phase with custom plugin ([f7fb705](https://github.com/semantic-release-action/typescript/commit/f7fb7054d6c9b145831491c931b18b5620adcda3))
+
 ## [4.0.6](https://github.com/semantic-release-action/typescript/compare/v4.0.5...v4.0.6) (2026-02-05)
 
 
