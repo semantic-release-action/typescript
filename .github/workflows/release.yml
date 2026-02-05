@@ -5,20 +5,20 @@ on:
   workflow_call:
     inputs:
       test-node-versions:
-        description: Node.js versions to use for testing
+        description: Node.js versions to use for testing.
         type: string
         default: "['lts/-2', 'lts/-1', 'lts/*']"
       test-command:
-        description: Command used to test your TypeScript program
+        description: Command used to test your TypeScript program.
         required: false
         type: string
         default: npm run --if-present test
       release-node-version:
-        description: Node.js version to use for releasing
+        description: Node.js version to use for releasing.
         type: string
         default: lts/*
       allow-postinstall-scripts:
-        description: Flag to permit post-install scripts
+        description: Flag to permit post-install scripts.
         type: boolean
         default: false
       disable-semantic-release-git:
@@ -31,7 +31,7 @@ on:
         required: false
     secrets:
       npm-token:
-        description: API token for writing to your npm registry
+        description: API token for writing to your npm registry.
         required: false
 
 # Only allow one release workflow to execute at a time, since each release
