@@ -1,3 +1,10 @@
+## [4.0.6](https://github.com/semantic-release-action/typescript/compare/v4.0.5...v4.0.6) (2026-02-05)
+
+
+### Bug Fixes
+
+* fix syntax ([7f92316](https://github.com/semantic-release-action/typescript/commit/7f92316fe14ecea80afa9414770b3f33f8a101f5))
+
 ## [4.0.5](https://github.com/semantic-release-action/typescript/compare/v4.0.4...v4.0.5) (2026-02-05)
 
 
