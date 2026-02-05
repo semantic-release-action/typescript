@@ -1,3 +1,10 @@
+## [4.0.5](https://github.com/semantic-release-action/typescript/compare/v4.0.4...v4.0.5) (2026-02-05)
+
+
+### Bug Fixes
+
+* use consistent self-reference ([4cc5ba0](https://github.com/semantic-release-action/typescript/commit/4cc5ba0154cf28995534b42a7a85c49219e50cd8))
+
 ## [4.0.4](https://github.com/semantic-release-action/typescript/compare/v4.0.3...v4.0.4) (2026-02-05)
 
 
