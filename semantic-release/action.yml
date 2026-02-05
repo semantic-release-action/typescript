@@ -24,7 +24,7 @@ inputs:
     required: false
   npm-token:
     description: API token for writing to your npm registry
-    default: ""
+    required: false
 
 runs:
   using: composite
