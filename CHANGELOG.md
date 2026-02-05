@@ -1,3 +1,10 @@
+## [3.2.6](https://github.com/semantic-release-action/typescript/compare/v3.2.5...v3.2.6) (2026-02-05)
+
+
+### Bug Fixes
+
+* remove default npm-token ([73f22c4](https://github.com/semantic-release-action/typescript/commit/73f22c42e386e46e1060802faabfad0c55773dab))
+
 ## [3.2.5](https://github.com/semantic-release-action/typescript/compare/v3.2.4...v3.2.5) (2026-02-05)
 
 
