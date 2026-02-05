@@ -4,6 +4,7 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/npm",
+    "./print-npmrc-plugin.js",
     "@semantic-release/git",
     "@semantic-release/github"
   ]
