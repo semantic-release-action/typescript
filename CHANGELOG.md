@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/semantic-release-action/typescript/compare/v4.0.2...v4.0.3) (2026-02-05)
+
+
+### Bug Fixes
+
+* debug even after failure ([0351969](https://github.com/semantic-release-action/typescript/commit/0351969159fc49be22f718a5fc41330bde0c5875))
+
 ## [4.0.2](https://github.com/semantic-release-action/typescript/compare/v4.0.1...v4.0.2) (2026-02-05)
 
 
