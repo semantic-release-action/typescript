@@ -1,3 +1,10 @@
+## [3.2.5](https://github.com/semantic-release-action/typescript/compare/v3.2.4...v3.2.5) (2026-02-05)
+
+
+### Bug Fixes
+
+* use '' as default NPM_TOKEN ([09ba691](https://github.com/semantic-release-action/typescript/commit/09ba6916eeaab228ae5e5c37c175da6c51d44ab5))
+
 ## [3.2.4](https://github.com/semantic-release-action/typescript/compare/v3.2.3...v3.2.4) (2026-02-05)
 
 
