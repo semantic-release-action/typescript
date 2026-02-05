@@ -24,7 +24,7 @@ inputs:
     required: false
   npm-token:
     description: API token for writing to your npm registry
-    required: false
+    default: ""
 
 runs:
   using: composite
@@ -162,24 +162,10 @@ runs:
       working-directory: ${{ env.node_workdir }}
       shell: bash
 
-    - run: npm --version
-      shell: bash
-
-    # Not using npm trusted publishing
-    - if: inputs.npm-token != ''
-      run: |
+    - run: |
         : semantic-release
         ${semantic_release}
       env:
         GITHUB_TOKEN: ${{ github.token }}
         NPM_TOKEN: ${{ inputs.npm-token }}
-      shell: bash
-
-    # Using npm trusted publishing
-    - if: inputs.npm-token == ''
-      run: |
-        : semantic-release
-        ${semantic_release}
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
       shell: bash
