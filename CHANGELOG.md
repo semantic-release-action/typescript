@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/semantic-release-action/typescript/compare/v4.0.1...v4.0.2) (2026-02-05)
+
+
+### Bug Fixes
+
+* add debug logs ([13d3c4d](https://github.com/semantic-release-action/typescript/commit/13d3c4d3822e6d657521273b0019dcedd6a1d470))
+
 ## [4.0.1](https://github.com/semantic-release-action/typescript/compare/v4.0.0...v4.0.1) (2026-02-05)
 
 
