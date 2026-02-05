@@ -103,19 +103,22 @@ on:
 jobs:
   release:
     uses: semantic-release-action/typescript/.github/workflows/release.yml@v3
-    secrets:
-      npm-token: ${{ secrets.NPM_TOKEN }}
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
 ```
 
 ### Inputs
 
-|       Input Parameter        |              Default              |                                          Description                                           |
-| :--------------------------: | :-------------------------------: | :--------------------------------------------------------------------------------------------: |
-|      test-node-versions      | `'["lts/-2", "lts/-1", "lts/*"]'` |                 Node.js versions to use for testing. [Details](#node-versions)                 |
-|         test-command         |    `npm run --if-present test`    |     Shell command used to provide confidence in proposed changes. [Details](#test-command)     |
-|     release-node-version     |              `lts/*`              |             Node.js version to use for releasing. [Details](#release-node-version)             |
-|  allow-postinstall-scripts   |              `false`              |     If false, uses `--ignore-scripts` with `npm ci`. [Details](#allow-postinstall-scripts)     |
-| disable-semantic-release-git |              `false`              | Disable [@semantic-release/git] in your release flow. [Details](#disable-semantic-release-git) |
+|       Input Parameter        |              Default              |                                                                   Description                                                                    |
+| :--------------------------: | :-------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: |
+|      test-node-versions      | `'["lts/-2", "lts/-1", "lts/*"]'` |                                          Node.js versions to use for testing. [Details](#node-versions)                                          |
+|         test-command         |    `npm run --if-present test`    |                              Shell command used to provide confidence in proposed changes. [Details](#test-command)                              |
+|     release-node-version     |              `lts/*`              |                                      Node.js version to use for releasing. [Details](#release-node-version)                                      |
+|  allow-postinstall-scripts   |              `false`              |                              If false, uses `--ignore-scripts` with `npm ci`. [Details](#allow-postinstall-scripts)                              |
+| disable-semantic-release-git |              `false`              |                          Disable [@semantic-release/git] in your release flow. [Details](#disable-semantic-release-git)                          |
 |         environment          |              `false`              | Required: `false`. Allows repositories to use GitHub Environments for OIDC Trusted Publishing, if provided when calling. [Details](#environment) |
 
 #### release-node-version
@@ -136,17 +139,4 @@ Runtime option controlling the use of GitHub [Environments].
 Required is set to `false` in the case that a repository is not using an Environment setup.
 This input will be required inside of repositories that are publishing using OIDC Trusted Publishing, as the Trusted Publishing settings on npmjs will only allow releases from the configured environment.
 
-[Environments]: https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments
-
-### Secrets
-
-|  Secret   | Required | Description                                   |
-| :-------: | :------: | --------------------------------------------- |
-| npm-token |  false   | npm registry API token. [Details](#npm-token) |
-
-#### npm-token
-
-API token with write permission for publishing your package to your target registry.
-Leave unset when using [trusted publishing].
-
-[trusted publishing]: https://docs.npmjs.com/trusted-publishers
+[environments]: https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments

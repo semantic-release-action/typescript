@@ -29,10 +29,6 @@ on:
         description: The GitHub environment name configured on npmjs.com, if using GitHub environments for deployment protection with trusted publishing.
         type: string
         required: false
-    secrets:
-      npm-token:
-        description: API token for writing to your npm registry.
-        required: false
 
 # Only allow one release workflow to execute at a time, since each release
 # workflow uses shared resources (git tags, package registries)
@@ -100,4 +96,3 @@ jobs:
           release-node-version: ${{ inputs.release-node-version }}
           allow-postinstall-scripts: ${{ inputs.allow-postinstall-scripts }}
           disable-semantic-release-git: ${{ inputs.disable-semantic-release-git }}
-          npm-token: ${{ secrets.npm-token }}
