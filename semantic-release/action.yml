@@ -163,6 +163,7 @@ runs:
       shell: bash
 
     - run: npm --version
+      shell: bash
 
     # Not using npm trusted publishing
     - if: inputs.npm-token != ''
