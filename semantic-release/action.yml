@@ -162,6 +162,8 @@ runs:
       working-directory: ${{ env.node_workdir }}
       shell: bash
 
+    - run: npm --version
+
     # Not using npm trusted publishing
     - if: inputs.npm-token != ''
       run: |
