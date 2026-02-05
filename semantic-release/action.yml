@@ -162,10 +162,21 @@ runs:
       working-directory: ${{ env.node_workdir }}
       shell: bash
 
-    - run: |
+    # Not using npm trusted publishing
+    - if: inputs.npm-token != ''
+      run: |
         : semantic-release
         ${semantic_release}
       env:
         GITHUB_TOKEN: ${{ github.token }}
         NPM_TOKEN: ${{ inputs.npm-token }}
+      shell: bash
+
+    # Using npm trusted publishing
+    - if: inputs.npm-token == ''
+      run: |
+        : semantic-release
+        ${semantic_release}
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       shell: bash
