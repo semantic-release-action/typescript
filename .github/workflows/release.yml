@@ -91,7 +91,7 @@ jobs:
 
     steps:
       - name: Release
-        uses: semantic-release-action/typescript/semantic-release@v3
+        uses: semantic-release-action/typescript/semantic-release@v4
         with:
           release-node-version: ${{ inputs.release-node-version }}
           allow-postinstall-scripts: ${{ inputs.allow-postinstall-scripts }}
