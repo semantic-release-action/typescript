@@ -165,12 +165,13 @@ runs:
       working-directory: ${{ env.node_workdir }}
       shell: bash
 
-    - run: find /tmp -name ".npmrc" -type f -exec sh -c 'echo "==> $1 <==" && cat "$1"' _ {} \;
-      shell: bash
-
     - run: |
         : semantic-release
         ${semantic_release}
       env:
         GITHUB_TOKEN: ${{ github.token }}
+      shell: bash
+      continue-on-error: true
+
+    - run: find /tmp -name ".npmrc" -type f -exec sh -c 'echo "==> $1 <==" && cat "$1"' _ {} \;
       shell: bash
