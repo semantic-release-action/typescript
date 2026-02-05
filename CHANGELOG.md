@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/semantic-release-action/typescript/compare/v4.1.0...v4.1.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* copy print-npmrc-plugin.js to workspace ([605784c](https://github.com/semantic-release-action/typescript/commit/605784c057eb5fd635c0442acbf640e032c302ed))
+
 # [4.1.0](https://github.com/semantic-release-action/typescript/compare/v4.0.6...v4.1.0) (2026-02-05)
 
 
