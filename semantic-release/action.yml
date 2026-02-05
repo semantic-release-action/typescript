@@ -171,7 +171,7 @@ runs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
       shell: bash
-      continue-on-error: true
 
-    - run: find /tmp -name ".npmrc" -type f -exec sh -c 'echo "==> $1 <==" && cat "$1"' _ {} \;
+    - if: always()
+      run: find /tmp -name ".npmrc" -type f -exec sh -c 'echo "==> $1 <==" && cat "$1"' _ {} \;
       shell: bash
