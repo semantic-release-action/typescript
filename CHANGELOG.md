@@ -1,3 +1,10 @@
+## [4.1.2](https://github.com/semantic-release-action/typescript/compare/v4.1.1...v4.1.2) (2026-02-06)
+
+
+### Bug Fixes
+
+* use ES modules for better compatibility ([c241892](https://github.com/semantic-release-action/typescript/commit/c24189285700de3345256e06353f7f9d19360adf))
+
 ## [4.1.1](https://github.com/semantic-release-action/typescript/compare/v4.1.0...v4.1.1) (2026-02-05)
 
 
